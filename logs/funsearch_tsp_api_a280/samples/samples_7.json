@@ -1,0 +1,1 @@
+{"sample_order": 7, "function": "def priority(current_city: int, distances: np.ndarray, unvisited: set[int]) -> np.ndarray:\n    cities = np.array(list(unvisited), dtype=np.int64)\n    inv_distances = 1.0 / (distances[current_city, cities] + 1e-5)\n    return inv_distances\n\n", "score": -3148.1099349344036}
